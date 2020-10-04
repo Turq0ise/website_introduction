@@ -1,6 +1,10 @@
 * {
     font-family: 'Josefin Sans';
-}   
+}
+
+body {
+    margin: 0;
+}
 
 .extra-space {
     padding-bottom: 10%;
@@ -8,16 +12,29 @@
 
 h1 {
     text-align: center;
-    font-size: 73px;
+    font-size: clamp(53px, 6vw, 73px);
 }
 
 h2 {
     text-align: center;
-    font-size: 25px;
+    font-size: clamp(18px, 6vw, 27px);
 }
 
-.fp-controlArrow{
+.fp-controlArrow {
     top: 90%;
+}
+
+// to color the navigation dots on the right \/
+#fp-nav, .fp-slidesNav {
+    ul {
+        li {
+            a {
+                span {
+                    background:black;
+                }
+            }
+        }
+    }
 }
 
 .s1 {
@@ -39,7 +56,7 @@ h2 {
 }
 
 .s2 {
-    background-color: black;
+    background-color: darkslategray;
 
     h1, h2{
         color: white;
@@ -66,5 +83,4 @@ h2 {
             }   
         }
     }
-
 }
