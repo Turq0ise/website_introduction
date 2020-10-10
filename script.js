@@ -1,6 +1,7 @@
 new fullpage('#fullPage', {
     autoScrolling: true,
     navigation: true,
+    navigationTooltips: ["Home", "What I Do", "Club Projects"]
 }); 
 
 /*var dotOne = document.querySelector("#fp-nav ul li a span:nth-child(2), .fp-right ul li a span:nth-child(2)").style.cssText = "background: cyan;";
